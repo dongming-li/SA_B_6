@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/shop_background"
+  tools:context="com.cs309.nerdsbattle.nerds_battle.chat.ConversationFragment">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ConversationActivity">
+
+
+    <ScrollView
+      android:id="@+id/conversation_scroll_view"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:background="@color/white"
+      app:layout_constraintBottom_toTopOf="@+id/guideline"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline11">
+
+      <TextView
+        android:id="@+id/conversation_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollIndicators="right"
+        android:scrollbars="vertical"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+      android:id="@+id/guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.8" />
+
+    <EditText
+      android:id="@+id/send_message_text"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/white"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@+id/guideline2"
+      app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+      android:id="@+id/send_message_button"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:text="Send"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline"
+      app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+      android:id="@+id/guideline11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.1" />
+
+    <Button
+      android:id="@+id/close_conversation_button"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="8dp"
+      android:text="Close"
+      app:layout_constraintBottom_toTopOf="@+id/guideline11"
+      app:layout_constraintEnd_toStartOf="@+id/guideline13"
+      app:layout_constraintHorizontal_bias="0.347"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/delete_conversation_button"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:text="Delete"
+      app:layout_constraintBottom_toTopOf="@+id/guideline11"
+      app:layout_constraintEnd_toStartOf="@+id/guideline14"
+      app:layout_constraintStart_toStartOf="@+id/guideline13"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+      android:id="@+id/add_to_conversation_button"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginEnd="8dp"
+      android:text="Add"
+      app:layout_constraintBottom_toTopOf="@+id/guideline11"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline14"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+      android:id="@+id/guideline13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.33" />
+    <android.support.constraint.Guideline
+      android:id="@+id/guideline14"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.66" />
+
+
+  </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

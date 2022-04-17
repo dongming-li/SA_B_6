@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="item_unowned">#949494</color>
+    <color name="item_owned">#6a6a6a</color>
+    <color name="white">#dcdcdc</color>
+    <color name="shop_action_background">#333333</color>
+    <color name="shop_background">#222222</color>
+</resources>

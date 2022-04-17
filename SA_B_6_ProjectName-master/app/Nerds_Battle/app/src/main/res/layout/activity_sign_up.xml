@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shop_action_background"
+    tools:context="com.cs309.nerdsbattle.nerds_battle.login.SignUpActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/SignUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="46dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignupUsernameText"
+        app:layout_constraintEnd_toEndOf="@+id/ConfirmPwText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SignupUsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Username:"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ETUsername"
+        app:layout_constraintStart_toStartOf="@+id/SignUpText"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpText" />
+
+    <TextView
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Password:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ETPassword"
+        app:layout_constraintStart_toStartOf="@+id/ETUsername"
+        app:layout_constraintTop_toBottomOf="@+id/ETUsername" />
+
+    <TextView
+        android:id="@+id/ConfirmPwText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="8dp"
+        android:text="Confirm Password:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword" />
+
+    <TextView
+        android:id="@+id/EmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="53dp"
+        android:text="Email:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/SecretQuesText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETConfirmPassword" />
+
+    <TextView
+        android:id="@+id/SecretQuesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Secret Question:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ETSecretQues"
+        app:layout_constraintStart_toStartOf="@+id/ETEmail"
+        app:layout_constraintTop_toBottomOf="@+id/EmailText" />
+
+    <TextView
+        android:id="@+id/AnswerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer to secret question:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ETAnswer"
+        app:layout_constraintStart_toStartOf="@+id/ETAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/ETSecretQues" />
+
+    <EditText
+        android:id="@+id/ETUsername"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordText"
+        app:layout_constraintStart_toStartOf="@+id/SignupUsernameText"
+        app:layout_constraintTop_toBottomOf="@+id/SignupUsernameText" />
+
+    <EditText
+        android:id="@+id/ETConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailText"
+        app:layout_constraintEnd_toEndOf="@+id/ETEmail"
+        app:layout_constraintStart_toStartOf="@+id/ConfirmPwText"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ETConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@+id/ETConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/PasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordText" />
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/SecretQuesText"
+        app:layout_constraintEnd_toEndOf="@+id/ETSecretQues"
+        app:layout_constraintStart_toStartOf="@+id/EmailText" />
+
+    <EditText
+        android:id="@+id/ETSecretQues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/AnswerText"
+        app:layout_constraintEnd_toEndOf="@+id/ETAnswer"
+        app:layout_constraintStart_toStartOf="@+id/AnswerText"
+        app:layout_constraintTop_toBottomOf="@+id/SecretQuesText" />
+
+    <EditText
+        android:id="@+id/ETAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="53dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpOutputText"
+        app:layout_constraintEnd_toEndOf="@+id/SignupBackBtn"
+        app:layout_constraintStart_toStartOf="@+id/SignUpOutputText"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerText" />
+
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="9dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toStartOf="@+id/SignupBackBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SignUpOutputText" />
+
+    <Button
+        android:id="@+id/SignupBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SignUpBtn"
+        app:layout_constraintTop_toTopOf="@+id/SignUpOutputText" />
+
+    <TextView
+        android:id="@+id/SignUpOutputText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETAnswer" />
+
+</android.support.constraint.ConstraintLayout>

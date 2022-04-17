@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_owned"
+    tools:context="com.cs309.nerdsbattle.nerds_battle.characteredit.CharacterEditActivity">
+
+
+    <GridView
+        android:id="@+id/CharacterEdit_Items"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/shop_background"
+        android:horizontalSpacing="40dp"
+        android:numColumns="3"
+        android:verticalSpacing="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--<Button-->
+    <!--android:id="@+id/CharEditBack"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:text="Back"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent" />-->
+
+    <!--android:layout_marginEnd="269dp"-->
+    <!--android:layout_marginRight="269dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.0" />-->
+
+
+    <ToggleButton
+        android:id="@+id/CharEdit_HairStyle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textOff="Hair Style"
+        android:textOn="Hair Style"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_Glasses"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/CharEdit_Glasses"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textOff="Glasses"
+        android:textOn="Glasses"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_Uniform"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_HairStyle" />
+
+    <ToggleButton
+        android:id="@+id/CharEdit_Uniform"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textOff="Uniform"
+        android:textOn="Uniform"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_MeleeWeapon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_Glasses" />
+
+    <ToggleButton
+        android:id="@+id/CharEdit_MeleeWeapon"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textOff="Melee Weapon"
+        android:textOn="Melee Weapon"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_RangeWeapon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_Uniform" />
+
+    <ToggleButton
+        android:id="@+id/CharEdit_RangeWeapon"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textOff="Range Weapon"
+        android:textOn="Range Weapon"
+        app:layout_constraintBottom_toTopOf="@+id/CharacterEdit_Items"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/CharEdit_VerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_MeleeWeapon" />
+
+    <ImageView
+        android:id="@+id/CharEdit_HairStyleImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_GlassesImage"
+        app:layout_constraintLeft_toRightOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/CharEdit_GlassesImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_UniformImage"
+        app:layout_constraintLeft_toRightOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_HairStyleImage"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/CharEdit_MeleeImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_UniformImage"
+        app:layout_constraintLeft_toRightOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintRight_toLeftOf="@+id/CharEdit_GlassesImage"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_HairStyleImage"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/CharEdit_RangeImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/CharEdit_UniformImage"
+        app:layout_constraintLeft_toRightOf="@+id/CharEdit_GlassesImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_HairStyleImage"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/CharEdit_UniformImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/CharacterEdit_Items"
+        app:layout_constraintLeft_toRightOf="@+id/CharEdit_VerticalGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CharEdit_GlassesImage"
+        app:srcCompat="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="242dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/CharEdit_VerticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="170dp" />
+
+
+</android.support.constraint.ConstraintLayout>

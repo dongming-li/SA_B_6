@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NerdsBattle_Home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.cs309.nerdsbattle.nerds_battle.HomeActivity">
+
+    <Button
+        android:id="@+id/btnStartMatchMaking"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:elevation="1dp"
+        android:text="Start Match Making"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditCharacter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditCharacter"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="1dp"
+        android:text="Edit Character"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateMap"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartMatchMaking" />
+
+    <Button
+        android:id="@+id/btnCreateMap"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:elevation="1dp"
+        android:text="Create Map"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditCharacter" />
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:elevation="1dp"
+        android:text="Chat"
+        app:layout_constraintBottom_toTopOf="@+id/btnStats"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateMap" />
+
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:elevation="1dp"
+        android:text="Stats"
+        app:layout_constraintBottom_toTopOf="@+id/btnShop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChat" />
+
+    <Button
+        android:id="@+id/btnShop"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="1dp"
+        android:text="Shop"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdmin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStats" />
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Admin/Mod"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/homebackground_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/school2" />
+
+    <ImageView
+        android:id="@+id/homebackground_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/school3" />
+
+    <TextView
+        android:id="@+id/Home_Username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Home_GPA"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Home_Money"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Home_GPA" />
+
+
+</android.support.constraint.ConstraintLayout>

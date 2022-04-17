@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MapEditorActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs309.nerdsbattle.nerds_battle.map.MapEditorActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.cs309.nerdsbattle.nerds_battle.map.MapEditorLayout
+        android:id="@+id/mapEditorLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/MapEditor_VertGuideline"
+        app:layout_constraintTop_toTopOf="@+id/MapEdit_HorizGuideline"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/MapEdit_HorizGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/mapEditorLayout"
+        app:layout_constraintGuide_begin="120dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridView
+        android:id="@+id/gridViewObstacles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/shop_background"
+        android:orientation="horizontal"
+        android:verticalSpacing="100dp"
+        app:layout_constraintBottom_toTopOf="@id/MapEditor_DeleteObstacle"
+        app:layout_constraintEnd_toEndOf="@+id/MapEditor_VertGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MapEdit_HorizGuideline">
+
+    </GridView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/MapEditor_VertGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="79dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/gridViewObstacles"
+        app:layout_constraintGuide_begin="120dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/MapEditor_TestText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteX="85dp"-->
+        <!--tools:layout_editor_absoluteY="81dp" />-->
+
+    <fragment
+        android:id="@+id/MapEditor_TopFragment"
+        android:name="com.cs309.nerdsbattle.nerds_battle.map.MapEditorTopFragment1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/MapEdit_HorizGuideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MapEditor_DeleteObstacle"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center_vertical"
+        android:text="DELETE"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mapEditorLayout" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_owned"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ToggleButton
+        android:id="@+id/MapEditor_Table"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:textOff="Table"
+        android:textOn="Table"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mapEditor_Save"
+        app:layout_constraintRight_toLeftOf="@+id/MapEditor_Chair"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/MapEditor_Chair"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:textOff="Chair"
+        android:textOn="Chair"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/MapEditor_Table"
+        app:layout_constraintRight_toLeftOf="@+id/MapEditor_Bookcase"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/MapEditor_Bookcase"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:textOff="Bookcase"
+        android:textOn="Bookcase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/MapEditor_Chair"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<ToggleButton-->
+    <!--android:id="@+id/MapEditor_Background"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="78dp"-->
+    <!--android:textOff="Background"-->
+    <!--android:textOn="Background"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toRightOf="@id/MapEditor_Bookcase"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/mapEditor_Save"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/MapEditor_Table"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

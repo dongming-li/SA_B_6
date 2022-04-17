@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/battleActivityFrameLayout"
+    tools:context="com.cs309.nerdsbattle.nerds_battle.battle.BattleActivity">
+
+</FrameLayout>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:theme="@style/AppTheme.NoActionBar"-->
+    <!--tools:context="com.cs309.nerdsbattle.nerds_battle.battle.BattleActivity">-->
+
+    <!--<com.cs309.nerdsbattle.nerds_battle.battle.GameView-->
+        <!--android:id="@+id/gameview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent="0.45"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="270dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline2"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.55"-->
+        <!--tools:layout_editor_absoluteY="453dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/guideline3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.64"-->
+        <!--tools:layout_editor_absoluteY="527dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/MapEdit_HorizGuideline"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.8"-->
+        <!--tools:layout_editor_absoluteY="659dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline5"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.82"-->
+        <!--tools:layout_editor_absoluteY="675dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline6"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.98"-->
+        <!--tools:layout_editor_absoluteY="807dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline7"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent="0.75"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="450dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline8"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent="0.98"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="588dp" />-->
+
+    <!--<com.cs309.nerdsbattle.nerds_battle.battle.JoystickView-->
+        <!--android:id="@+id/joystick"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:maxHeight="318dp"-->
+        <!--android:maxWidth="318dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintDimensionRatio="1:1"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/guideline"-->
+        <!--app:layout_constraintVertical_bias="1.0"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline2" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnMelee"-->
+        <!--style="@style/Widget.AppCompat.Button"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="M"-->
+        <!--android:background="@drawable/attackbtn"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/MapEdit_HorizGuideline"-->
+        <!--app:layout_constraintDimensionRatio="1:1"-->
+        <!--app:layout_constraintHorizontal_bias="0.85"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/guideline8"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/guideline7"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline3" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnRange"-->
+        <!--style="@style/Widget.AppCompat.Button"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="R"-->
+        <!--android:background="@drawable/rangebtn"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/guideline6"-->
+        <!--app:layout_constraintDimensionRatio="1:1"-->
+        <!--app:layout_constraintHorizontal_bias="0.85"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/guideline8"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/guideline7"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline5" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
